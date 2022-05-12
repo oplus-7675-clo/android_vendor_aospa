@@ -278,3 +278,8 @@ endif
 ifneq ($(TARGET_KERNEL_PLATFORM_TARGET),)
 KERNEL_PATH := $(abspath $(BUILD_TOP)/kernel/platform/kernel-$(TARGET_KERNEL_VERSION))
 endif
+
+# Qualcomm kernel.
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+endif
