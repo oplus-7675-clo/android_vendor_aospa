@@ -244,6 +244,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ThemePicker
 
+# Userdebug
+# Set ro.debuggable=0 for userdebug
+PRODUCT_NOT_DEBUGGABLE_IN_USERDEBUG := true
+
 # ViperFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
