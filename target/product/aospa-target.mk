@@ -267,14 +267,14 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Disable ADB authentication
-PRODUCT_PRODUCT_PROPERTIES += ro.adb.secure=0
+PRODUCT_SYSTEM_EXT_PROPERTIES += ro.adb.secure=0
 else
 ifdef WITH_ADB_INSECURE
 # Forcebly disable ADB authentication
-PRODUCT_PRODUCT_PROPERTIES += ro.adb.secure=0
+PRODUCT_SYSTEM_EXT_PROPERTIES += ro.adb.secure=0
 else
 # Enable ADB authentication
-PRODUCT_PRODUCT_PROPERTIES += ro.adb.secure=1
+PRODUCT_SYSTEM_EXT_PROPERTIES += ro.adb.secure=1
 endif
 endif
 
