@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2025 Paranoid Android
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest>
+  <project path="hardware/qcom/display" name="oplus-8650-clo/android_hardware_qcom_display" remote="github" revision="calcite-8650" />
+  <project path="hardware/qcom/gps" name="oplus-8650-clo/android_hardware_qcom_gps" remote="github" revision="calcite-8650" />
+  <project path="hardware/qcom/media" name="oplus-8650-clo/android_hardware_qcom_media" remote="github" revision="calcite-8650" />
+  <project path="vendor/qcom/opensource/agm" name="oplus-8650-clo/android_vendor_qcom_opensource_agm" remote="github" revision="calcite-8650" />
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="oplus-8650-clo/android_hardware_qcom_audio" remote="github" revision="calcite-8650" />
+  <project path="vendor/qcom/opensource/audioreach-graphservices" name="oplus-8650-clo/android_vendor_qcom_opensource_audioreach-graphservices" remote="github" revision="calcite-8650" />
+  <project path="vendor/qcom/opensource/pal" name="oplus-8650-clo/android_vendor_qcom_opensource_arpal-lx" remote="github" revision="calcite-8650" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="oplus-8650-clo/android_vendor_qcom_opensource_audio-hal_st-hal-ar" remote="github" revision="calcite-8650" />
+</manifest>
