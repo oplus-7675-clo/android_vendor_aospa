@@ -248,6 +248,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ThemePicker
 
+# ViperFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # WiFi
 PRODUCT_PACKAGES += \
     libwpa_client
