@@ -1,3 +1,6 @@
+# Adb root
+adbroot_service                           u:object_r:adbroot_service:s0
+
 # AOSPA Power HAL
 vendor.aospa.power.IPowerFeature/default    u:object_r:hal_power_service:s0
 
