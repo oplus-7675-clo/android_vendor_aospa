@@ -51,8 +51,8 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 DONT_DEXPREOPT_PREBUILTS := true
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Launcher3QuickStep \
-    ParanoidSystemUI
+    Launcher3QuickStep
+#    ParanoidSystemUI
 
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.systemuicompilerfilter=speed
@@ -139,20 +139,20 @@ $(call inherit-product, vendor/aospa/overlay/overlays.mk)
 $(call inherit-product-if-exists, vendor/aospa/translations/translations.mk)
 
 # Paranoid Packages
-PRODUCT_PACKAGES += \
-    ParanoidPapers \
-    ParanoidSystemUI
+#PRODUCT_PACKAGES += \
+#    ParanoidPapers \
+#    ParanoidSystemUI
 
 # Paranoid Sense
-PRODUCT_PACKAGES += \
-    ParanoidSense
+#PRODUCT_PACKAGES += \
+#    ParanoidSense
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
+#PRODUCT_COPY_FILES += \
+#    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 
 # Enable Sense service for 64-bit only
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.face.sense_service=$(TARGET_SUPPORTS_64_BIT_APPS)
+#PRODUCT_SYSTEM_EXT_PROPERTIES += \
+#    ro.face.sense_service=$(TARGET_SUPPORTS_64_BIT_APPS)
 
 # Permissions
 PRODUCT_COPY_FILES += \
