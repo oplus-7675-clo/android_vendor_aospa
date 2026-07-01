@@ -50,8 +50,8 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 # Don't dexpreopt prebuilts. (For GMS).
 DONT_DEXPREOPT_PREBUILTS := true
 
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Launcher3QuickStep
+#PRODUCT_DEXPREOPT_SPEED_APPS += \
+#    Launcher3QuickStep
 #    ParanoidSystemUI
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -95,11 +95,14 @@ PRODUCT_PACKAGES += \
     vendor.aospa.power-service
 
 # Google - GMS, Pixel, and Mainline Modules
-$(call inherit-product, vendor/google/gms/config.mk)
-$(call inherit-product, vendor/google/pixel/config.mk)
-ifneq ($(TARGET_EXCLUDE_GMODULES), true)
-$(call inherit-product-if-exists, vendor/google/modules/build/mainline_modules.mk)
-endif
+WITH_GMS := true
+
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+$(call inherit-product, vendor/pixel/clocks/products/clocks.mk)
+$(call inherit-product, vendor/pixel/gsans/products/gsans.mk)
+$(call inherit-product, vendor/pixel/launcher/products/launcher.mk)
+$(call inherit-product, vendor/pixel/sounds/products/sounds.mk)
+$(call inherit-product, vendor/pixel/themepicker/products/themepicker.mk)
 
 PRODUCT_PRODUCT_PROPERTIES += \
     remote_provisioning.enable_rkpd=true \
@@ -254,8 +257,8 @@ PRODUCT_PACKAGES += \
     libtextclassifier_lang_id_model
 
 # Theme Picker
-PRODUCT_PACKAGES += \
-    ThemePicker
+#PRODUCT_PACKAGES += \
+#    ThemePicker
 
 # Userdebug
 # Set ro.debuggable=0 for userdebug
