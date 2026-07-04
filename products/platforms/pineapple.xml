@@ -4,7 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest>
-  <project path="hardware/qcom/display" name="oplus-8650-clo/android_hardware_qcom_display" remote="github" revision="beryl-8650" />
+  <project path="hardware/qcom/u/display" name="oplus-8650-clo/android_hardware_qcom_display" remote="github" revision="beryl-8650" />
   <project path="hardware/qcom/gps" name="oplus-8650-clo/android_hardware_qcom_gps" remote="github" revision="beryl-8650" />
   <project path="hardware/qcom/media" name="oplus-8650-clo/android_hardware_qcom_media" remote="github" revision="beryl-8650" />
   <project path="vendor/qcom/opensource/agm" name="oplus-8650-clo/android_vendor_qcom_opensource_agm" remote="github" revision="beryl-8650" />
